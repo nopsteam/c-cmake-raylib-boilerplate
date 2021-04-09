@@ -14,7 +14,7 @@ FetchContent_Declare(
 FetchContent_Declare(
   raylib
   GIT_REPOSITORY https://github.com/raysan5/raylib.git
-  GIT_TAG        3.5.0)
+  GIT_TAG        master)
 set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE) # don't build the supplied examples
 
 FetchContent_MakeAvailable(unity raylib)
