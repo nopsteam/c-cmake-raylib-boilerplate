@@ -1,4 +1,4 @@
-# C, Cmake and Raylib Boilerplate ![CI](https://github.com/rafaeldelboni/c-cmake-raylib-boilerplate/workflows/CI/badge.svg)
+# C, Cmake and Raylib Boilerplate [![CI](https://github.com/nopsteam/c-cmake-raylib-boilerplate/actions/workflows/main.yml/badge.svg)](https://github.com/nopsteam/c-cmake-raylib-boilerplate/actions/workflows/main.yml)
 
 This is a C project template with the following features:
 
