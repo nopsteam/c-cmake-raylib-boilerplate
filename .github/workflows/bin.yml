@@ -30,7 +30,9 @@ jobs:
           CC: ${{ matrix.compiler }}
         run: |
           cmake -DCMAKE_BUILD_TYPE=Release -B build/release
-          make release
+          cmake --build build/release --config Release
+          mkdir build/release/bin/resources
+          cp -r resources/* build/release/bin/resources
       - uses: actions/upload-artifact@v2
         with:
           name: linux-bin
@@ -52,7 +54,9 @@ jobs:
           CC: ${{ matrix.compiler }}
         run: |
           cmake -DCMAKE_BUILD_TYPE=Release -B build/release
-          make release
+          cmake --build build/release --config Release
+          mkdir build/release/bin/resources
+          cp -r resources/* build/release/bin/resources
       - uses: actions/upload-artifact@v2
         with:
           name: mac-bin
@@ -63,13 +67,13 @@ jobs:
     name: Build on Windows
 
     steps:
-      - name: Setup MSBuild
-        uses: microsoft/setup-msbuild@v1.0.2
       - uses: actions/checkout@v2.1.0
       - name: build
         run: |
           cmake -DCMAKE_BUILD_TYPE=Release -B build/release
-          cmake --build build/release
+          cmake --build build/release --config Release
+          mkdir build\release\bin\Release\resources
+          xcopy /E /I resources build\release\bin\Release\resources
       - uses: actions/upload-artifact@v2
         with:
           name: windows-bin
