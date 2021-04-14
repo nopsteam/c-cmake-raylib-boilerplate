@@ -9,11 +9,15 @@ set(FETCHCONTENT_QUIET 0)
 FetchContent_Declare(
   unity
   GIT_REPOSITORY https://github.com/ThrowTheSwitch/Unity.git
+  GIT_SHALLOW    TRUE
+  GIT_PROGRESS   TRUE
   GIT_TAG        master)
 
 FetchContent_Declare(
   raylib
   GIT_REPOSITORY https://github.com/raysan5/raylib.git
+  GIT_SHALLOW    TRUE
+  GIT_PROGRESS   TRUE
   GIT_TAG        master)
 set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE) # don't build the supplied examples
 
