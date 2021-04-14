@@ -9,6 +9,20 @@ This is a C project template with the following features:
  - Resource folder to include assets
  - Updated and improved version of [C-project-template](https://github.com/peterdn/C-project-template)
 
+## Compiling / Building
+
+### Installing Dependencies
+
+#### Arch Linux
+```bash
+yay -Sy clang cmake lcov glfw libx11 libxcursor libxinerama libxrandr vulkan-headers xorg-server-devel xorg-xinput
+```
+
+#### Ubuntu
+```bash
+sudo apt-get install clang cmake lcov libasound2-dev mesa-common-dev libx11-dev libxrandr-dev libxi-dev xorg-dev libgl1-mesa-dev libglu1-mesa-dev
+```
+
 ## Usage
 
 ### Setup
@@ -78,22 +92,8 @@ This will open an Raylib white window with the unlicense logo on it.
  - [Clang](https://clang.llvm.org/)
  - [Make](https://www.gnu.org/software/make/)
  - [CMake](https://cmake.org/)
- - [raylib](https://www.raylib.com/)
- - [LCOV](https://github.com/linux-test-project/lcov)
-
-### Installing Dependencies
-
-#### Arch Linux
-```bash
-yay -Sy clang cmake lcov
-```
-
-#### Ubuntu
-```bash
-sudo add-apt-repository -y "deb http://archive.ubuntu.com/ubuntu `lsb_release -sc` main universe restricted multiverse"
-sudo apt-get update -y -qq
-sudo apt-get install clang cmake lcov
-```
+ - [Raylib](https://www.raylib.com/)
+ - [Lcov](https://github.com/linux-test-project/lcov)
 
 ## License
 This is free and unencumbered software released into the public domain.  
